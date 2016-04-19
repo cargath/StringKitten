@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352071A51CC6CD69009BC420 /* NSAttributedString+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352071A41CC6CD69009BC420 /* NSAttributedString+UIFont.swift */; };
+		352071C51CC6D2FE009BC420 /* NSAttributedString+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352071C41CC6D2FE009BC420 /* NSAttributedString+UIColor.swift */; };
 		AD79F0AC1CBE490500825238 /* StringKitten.h in Headers */ = {isa = PBXBuildFile; fileRef = AD79F0AB1CBE490500825238 /* StringKitten.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD79F0B31CBE490500825238 /* StringKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD79F0A81CBE490500825238 /* StringKitten.framework */; };
 		AD79F0B81CBE490500825238 /* StringKittenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79F0B71CBE490500825238 /* StringKittenTests.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		352071A41CC6CD69009BC420 /* NSAttributedString+UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+UIFont.swift"; sourceTree = "<group>"; };
+		352071C41CC6D2FE009BC420 /* NSAttributedString+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+UIColor.swift"; sourceTree = "<group>"; };
 		AD79F0A81CBE490500825238 /* StringKitten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StringKitten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD79F0AB1CBE490500825238 /* StringKitten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringKitten.h; sourceTree = "<group>"; };
 		AD79F0AD1CBE490500825238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352071A31CC6CD46009BC420 /* Attributed Strings */ = {
+			isa = PBXGroup;
+			children = (
+				352071C41CC6D2FE009BC420 /* NSAttributedString+UIColor.swift */,
+				352071A41CC6CD69009BC420 /* NSAttributedString+UIFont.swift */,
+			);
+			name = "Attributed Strings";
+			sourceTree = "<group>";
+		};
 		AD79F09E1CBE490500825238 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +88,7 @@
 		AD79F0AA1CBE490500825238 /* StringKitten */ = {
 			isa = PBXGroup;
 			children = (
+				352071A31CC6CD46009BC420 /* Attributed Strings */,
 				AD79F0C21CBE496000825238 /* Regular Expressions */,
 				AD79F0AB1CBE490500825238 /* StringKitten.h */,
 				AD79F0AD1CBE490500825238 /* Info.plist */,
@@ -208,7 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352071A51CC6CD69009BC420 /* NSAttributedString+UIFont.swift in Sources */,
 				AD79F0C41CBE49DF00825238 /* RegularExpressionMatchable.swift in Sources */,
+				352071C51CC6D2FE009BC420 /* NSAttributedString+UIColor.swift in Sources */,
 				AD79F0C61CBE4A0900825238 /* RegEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +411,7 @@
 				AD79F0BE1CBE490500825238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD79F0BF1CBE490500825238 /* Build configuration list for PBXNativeTarget "StringKittenTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +420,7 @@
 				AD79F0C11CBE490500825238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
