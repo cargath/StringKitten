@@ -10,6 +10,7 @@
 		352071A51CC6CD69009BC420 /* NSAttributedString+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352071A41CC6CD69009BC420 /* NSAttributedString+UIFont.swift */; };
 		352071C51CC6D2FE009BC420 /* NSAttributedString+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352071C41CC6D2FE009BC420 /* NSAttributedString+UIColor.swift */; };
 		352071C81CC6D414009BC420 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352071C71CC6D414009BC420 /* String+Localization.swift */; };
+		352071CE1CC803B8009BC420 /* NSAttributedString+Concatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352071CD1CC803B8009BC420 /* NSAttributedString+Concatenation.swift */; };
 		AD79F0AC1CBE490500825238 /* StringKitten.h in Headers */ = {isa = PBXBuildFile; fileRef = AD79F0AB1CBE490500825238 /* StringKitten.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD79F0B31CBE490500825238 /* StringKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD79F0A81CBE490500825238 /* StringKitten.framework */; };
 		AD79F0B81CBE490500825238 /* StringKittenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79F0B71CBE490500825238 /* StringKittenTests.swift */; };
@@ -31,6 +32,7 @@
 		352071A41CC6CD69009BC420 /* NSAttributedString+UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+UIFont.swift"; sourceTree = "<group>"; };
 		352071C41CC6D2FE009BC420 /* NSAttributedString+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+UIColor.swift"; sourceTree = "<group>"; };
 		352071C71CC6D414009BC420 /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		352071CD1CC803B8009BC420 /* NSAttributedString+Concatenation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Concatenation.swift"; sourceTree = "<group>"; };
 		AD79F0A81CBE490500825238 /* StringKitten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StringKitten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD79F0AB1CBE490500825238 /* StringKitten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringKitten.h; sourceTree = "<group>"; };
 		AD79F0AD1CBE490500825238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		352071A31CC6CD46009BC420 /* Attributed Strings */ = {
 			isa = PBXGroup;
 			children = (
+				352071CD1CC803B8009BC420 /* NSAttributedString+Concatenation.swift */,
 				352071C41CC6D2FE009BC420 /* NSAttributedString+UIColor.swift */,
 				352071A41CC6CD69009BC420 /* NSAttributedString+UIFont.swift */,
 			);
@@ -237,6 +240,7 @@
 				AD79F0C41CBE49DF00825238 /* RegularExpressionMatchable.swift in Sources */,
 				352071C51CC6D2FE009BC420 /* NSAttributedString+UIColor.swift in Sources */,
 				AD79F0C61CBE4A0900825238 /* RegEx.swift in Sources */,
+				352071CE1CC803B8009BC420 /* NSAttributedString+Concatenation.swift in Sources */,
 				352071C81CC6D414009BC420 /* String+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
