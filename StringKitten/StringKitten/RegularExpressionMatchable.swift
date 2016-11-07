@@ -13,7 +13,13 @@ public protocol RegularExpressionMatchable {
     func match(_ input: String, options: NSRegularExpression.MatchingOptions) -> [NSTextCheckingResult]?
 }
 
-infix operator =~ { associativity left precedence 130 }
+precedencegroup PatternMatching {
+    associativity: left
+    lowerThan: DefaultPrecedence
+}
+
+infix operator =~ : PatternMatching
+
 public func =~<T: RegularExpressionMatchable> (left: T, right: String) -> Int? {
     return left.test(right, options: [])
 }
