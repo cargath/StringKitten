@@ -9,8 +9,8 @@
 import Foundation
 
 public protocol RegularExpressionMatchable {
-    func test(input: String, options: NSMatchingOptions) -> Int?
-    func match(input: String, options: NSMatchingOptions) -> [NSTextCheckingResult]?
+    func test(_ input: String, options: NSRegularExpression.MatchingOptions) -> Int?
+    func match(_ input: String, options: NSRegularExpression.MatchingOptions) -> [NSTextCheckingResult]?
 }
 
 infix operator =~ { associativity left precedence 130 }

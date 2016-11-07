@@ -25,7 +25,7 @@ public extension NSAttributedString {
 
 public extension NSMutableAttributedString {
 
-    public func withFont(font: UIFont) -> NSMutableAttributedString {
+    public func withFont(_ font: UIFont) -> NSMutableAttributedString {
 
         addAttributes([
             NSFontAttributeName: font

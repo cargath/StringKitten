@@ -13,7 +13,7 @@ import Foundation
 public struct RegEx {
 
     public var pattern: String = ""
-    public var options: NSRegularExpressionOptions = []
+    public var options: NSRegularExpression.Options = []
 
     public var expression: NSRegularExpression? {
         return try? NSRegularExpression(pattern: self.pattern, options: options)
@@ -25,11 +25,11 @@ public struct RegEx {
 
 extension RegEx: RegularExpressionMatchable {
 
-    public func test(input: String, options: NSMatchingOptions = []) -> Int? {
+    public func test(_ input: String, options: NSRegularExpression.MatchingOptions = []) -> Int? {
 
         if let
             expression = self.expression,
-            firstMatch = expression.matchesInString(input, options: options, range: NSMakeRange(0, input.characters.count)).first {
+            let firstMatch = expression.matches(in: input, options: options, range: NSMakeRange(0, input.characters.count)).first {
 
                 return firstMatch.range.location
         }
@@ -37,10 +37,10 @@ extension RegEx: RegularExpressionMatchable {
         return nil
     }
 
-    public func match(input: String, options: NSMatchingOptions = []) -> [NSTextCheckingResult]? {
+    public func match(_ input: String, options: NSRegularExpression.MatchingOptions = []) -> [NSTextCheckingResult]? {
 
         if let expression = self.expression {
-            return expression.matchesInString(input, options: options, range: NSMakeRange(0, input.characters.count))
+            return expression.matches(in: input, options: options, range: NSMakeRange(0, input.characters.count))
         }
 
         return nil
@@ -50,7 +50,7 @@ extension RegEx: RegularExpressionMatchable {
 
 // MARK: - StringLiteralConvertible
 
-extension RegEx: StringLiteralConvertible {
+extension RegEx: ExpressibleByStringLiteral {
 
     public typealias ExtendedGraphemeClusterLiteralType = String
     public typealias UnicodeScalarLiteralType = String

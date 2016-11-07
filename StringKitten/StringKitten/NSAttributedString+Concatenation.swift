@@ -12,23 +12,23 @@ import Foundation
 
 public extension NSAttributedString {
 
-    public class func flatten(attributedStrings: [NSAttributedString]) -> NSAttributedString {
+    public class func flatten(_ attributedStrings: [NSAttributedString]) -> NSAttributedString {
 
         let combined = NSMutableAttributedString()
 
         for attributedString in attributedStrings {
-            combined.appendAttributedString(attributedString)
+            combined.append(attributedString)
         }
 
         return combined.copy() as! NSAttributedString
     }
 
-    public func attributedStringByAppendingAttributedString(attributedString: NSAttributedString) -> NSAttributedString {
+    public func attributedStringByAppendingAttributedString(_ attributedString: NSAttributedString) -> NSAttributedString {
 
         let combined = NSMutableAttributedString()
 
-        combined.appendAttributedString(self)
-        combined.appendAttributedString(attributedString)
+        combined.append(self)
+        combined.append(attributedString)
 
         return combined.copy() as! NSAttributedString
     }
@@ -45,7 +45,6 @@ public extension Array where Element: NSAttributedString {
 
 }
 
-@warn_unused_result
 public func +(lhs: NSAttributedString, rhs: NSAttributedString) -> NSAttributedString {
     return lhs.attributedStringByAppendingAttributedString(rhs)
 }

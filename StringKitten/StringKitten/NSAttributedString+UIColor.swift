@@ -25,7 +25,7 @@ public extension NSAttributedString {
 
 public extension NSMutableAttributedString {
 
-    public func withColor(color: UIColor) -> NSMutableAttributedString {
+    public func withColor(_ color: UIColor) -> NSMutableAttributedString {
 
         addAttributes([
             NSForegroundColorAttributeName: color

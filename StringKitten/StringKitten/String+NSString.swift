@@ -14,8 +14,8 @@ public extension String {
         return (self as NSString).lastPathComponent
     }
 
-    public func stringByReplacingCharactersInRange(range: NSRange, withString replacement: String) -> String {
-        return (self as NSString).stringByReplacingCharactersInRange(range, withString: replacement)
+    public func stringByReplacingCharactersInRange(_ range: NSRange, withString replacement: String) -> String {
+        return (self as NSString).replacingCharacters(in: range, with: replacement)
     }
 
 }
